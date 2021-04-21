@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/blackback"
+    tools:context=".MainActivity">
+
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textSize="16dp"
+    android:text="BANK: $1000"
+    android:textColor="#FFD700"
+    android:id="@+id/bank"
+    android:layout_centerHorizontal="true"/>
+
+
+    <HorizontalScrollView
+        android:layout_marginTop="25dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="20dp"
+        android:layout_centerHorizontal="true"
+
+        android:id="@+id/dealerscroll">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/layoutDealer"
+            android:orientation="horizontal"/>
+    </HorizontalScrollView>
+
+    <LinearLayout
+        android:layout_marginTop="60dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/dealerscroll"
+        android:orientation="horizontal"
+        android:id="@+id/infoll"
+        android:layout_centerHorizontal="true">
+
+        <TextView
+            android:id="@+id/DealerSum"
+            android:textColor="#FFD700"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+           android:textSize="16dp"
+            android:text="Dealer: 00"
+            android:visibility="invisible"/>
+        <Button
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:id="@+id/minus"
+            android:padding="10dp"
+            android:layout_marginLeft="5dp"
+            android:text="-"/>
+
+        <TextView
+            android:id="@+id/Pot"
+            android:textColor="#FFD700"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:textSize="16dp"
+            android:text="BET: $50" />
+        <Button
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:id="@+id/plus"
+            android:padding="10dp"
+            android:text="+"
+            />
+        <TextView
+            android:id="@+id/PlayerSum"
+            android:textColor="#FFD700"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:visibility="invisible"
+            android:textSize="16dp"
+            android:text="Player: 00" />
+
+    </LinearLayout>
+
+    <HorizontalScrollView
+        android:layout_marginTop="50dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/infoll"
+        android:id="@+id/playerscroll">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/layoutPlayer"
+            android:orientation="horizontal"/>
+    </HorizontalScrollView>
+
+
+    <LinearLayout
+        android:layout_marginTop="27dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/playerscroll"
+        android:orientation="horizontal"
+        android:id="@+id/buttonll"
+        android:layout_centerHorizontal="true">
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/hit"
+        android:text="START"
+        android:layout_centerHorizontal="true"
+
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/stand"
+        android:layout_centerHorizontal="true"
+        android:visibility="gone"
+        android:layout_marginLeft="15dp"
+        android:text="STAND"/>
+
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/restart"
+            android:layout_centerHorizontal="true"
+            android:visibility="gone"
+            android:text="CONTINUE"
+
+            />
+
+
+
+
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/buttonll"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/gameCount"
+        android:textSize="16dp"
+        android:text="0"
+        android:textColor="#FFD700"
+        android:layout_below="@id/restart"/>
+    </LinearLayout>
+
+
+
+
+
+
+
+</RelativeLayout>
