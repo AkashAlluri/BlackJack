@@ -117,7 +117,7 @@ MCT File Submission
 # Working:
 
 ## Here is a gif showing the game off:
-<img src="https://user-images.githubusercontent.com/82951104/115983293-f4d60200-a5bd-11eb-918a-5b3c0b2072d5.png" width="90%"></img>
+<img src="https://user-images.githubusercontent.com/82951104/115983293-f4d60200-a5bd-11eb-918a-5b3c0b2072d5.png" width="60%"></img>
 
 ![](RackMultipart20210424-4-jcd1he_html_b198f5accd73bdbf.gif)
 
